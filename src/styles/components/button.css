@@ -1,0 +1,17 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  padding: 10px 37px;
+  background-color: var(--game-color-5);
+  color: var(--text-on-accent);
+  transition: background-color var(--transition-duration);
+  box-shadow: var(--transition-duration);
+}
+
+.button:hover {
+  background-color: var(--game-color-2);
+  transform: scale(1.05);
+  box-shadow: var(--box-shadow);
+}

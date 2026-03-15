@@ -1,0 +1,38 @@
+.game-canvas-frame {
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-m);
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--game-color-1),
+      var(--game-color-2),
+      var(--game-color-3),
+      var(--game-color-4),
+      var(--game-color-1)
+    ) border-box;
+
+  background-size: 300% 100%;
+  animation: frame-border-flow 4s linear infinite;
+}
+
+@keyframes frame-border-flow {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.game-canvas {
+  display: block;
+  width: 100%;
+  image-rendering: pixelated;
+  border-radius: var(--border-radius-m);
+}

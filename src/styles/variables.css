@@ -1,0 +1,50 @@
+:root {
+  /* Шрифты */
+  --font-ui: 'Manrope', sans-serif;
+  --font-pixel: 'Pixelify Sans', monospace;
+
+  /* Размеры */
+  --text-xs: 13px;
+  --text-s: 15px;
+  --text-m: 16px;
+  --text-l: 20px;
+  --text-xl: 27px;
+
+  /* Базовые цвета */
+  --color-gray-0: #7b7b80;
+  --color-gray-1: #34363A;
+  --color-gray-2: #2B2D30;
+  --color-gray-3: #26282B;
+  --color-white: #ffffff;
+
+  --color-mint-1: #DDEFE4;
+  --color-mint-2: #99ad9d;
+  --color-mint-3: #c6e590;
+
+  /* Семантика (поверхности) */
+  --color-bg: var(--color-gray-2);
+  --color-panel: var(--color-gray-1);
+  --color-field: var(--color-gray-3);
+  --color-surface-accent: var(--color-mint-1);
+
+  /* Текст */
+  --stat-text: var(--game-color-6);
+  --text-on-accent: var(--color-gray-1);
+
+  /* Палитра игры (canvas) */
+  --game-color-1: #A8D5BA;
+  --game-color-2: #E6B8CF;
+  --game-color-3: #C9C2E8;
+  --game-color-4: #F1D9B6;
+  --game-color-5: #f5ACAC;
+  --game-color-6: #99d9ff;
+
+  --game-palette-size: 4;
+
+  /* Дополнительно */
+  --border: 2px solid var(--game-color-1);
+  --border-radius-s: 4px;
+  --border-radius-m: 8px;
+  --box-shadow: 0 0 12px rgba(230, 184, 207, 0.35);
+  --transition-duration: 0.2s;
+}

@@ -1,0 +1,6 @@
+.stat {
+  display: flex;
+  gap: 8px;
+  color: var(--stat-text);
+  font-size: var(--text-m);
+}

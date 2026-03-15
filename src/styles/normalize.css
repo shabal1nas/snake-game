@@ -1,0 +1,68 @@
+/* БАЗОВЫЙ RESET ДЛЯ НЕБОЛЬШОГО ПРИЛОЖЕНИЯ (canvas-игра) */
+
+
+/* Предсказуемая модель размеров */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Убираем стандартные отступы страницы + делаем основу для центрирования по высоте */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+
+/* Картинки и видео не вылезают за контейнер */
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Поля ввода используют тот же шрифт, что и приложение */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+
+/* Интерактивные элементы сразу показывают кликабельность */
+button,
+label {
+  cursor: pointer;
+}
+
+
+/* Настройки canvas:убираем inline-зазор + пиксели остаются чёткими при масштабировании */
+canvas {
+  display: block;
+  image-rendering: pixelated;
+}
+
+
+/* Режим уменьшенного движения (доступность):
+отключаем анимации у пользователей, которые это попросили в системе */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
