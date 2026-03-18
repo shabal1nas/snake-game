@@ -67,7 +67,7 @@ npm run build
 
 ## Live Demo
 
-[Open the game](https://your-deployed-link.com)
+[Open the game](https://shabal1nas.github.io/snake-game/)
 
 ## Controls
 
