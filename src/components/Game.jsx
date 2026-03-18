@@ -1,13 +1,11 @@
-import Stat from "./Stat";
-import { GameCanvas } from "./index";
-import GameScreen from "./GameScreen";
-import useSnakeGame from "../hooks/useSnakeGame";
-import "../styles/components/game.css"
+import { GameCanvas, GameScreen, Stat } from './index'
+import useSnakeGame from '../hooks/useSnakeGame'
+import '../styles/components/game.css'
 
 const Game = (props) => {
   const { onClose } = props
   const { gameState, handleStart, handleRestart } = useSnakeGame()
-  const { snake, food, status, score, bestScore, multiplier} = gameState
+  const { snake, food, status, score, bestScore, multiplier } = gameState
 
   return (
     <div className="game">
@@ -27,7 +25,7 @@ const Game = (props) => {
       </div>
 
       <div className="game__body">
-        {status === "game" && (
+        {status === 'game' && (
           <div className="game__stats">
             <Stat label="Multiplier" value={multiplier} suffix="x" />
             <Stat label="Score" value={score} />
@@ -35,13 +33,13 @@ const Game = (props) => {
         )}
 
         <div className="game__field">
-          {status === "start" && (
+          {status === 'start' && (
             <GameScreen variant="start" onStart={handleStart} />
           )}
 
-          {status === "game" && <GameCanvas snake={snake} food={food} />}
+          {status === 'game' && <GameCanvas snake={snake} food={food} />}
 
-          {status === "gameover" && (
+          {status === 'gameover' && (
             <GameScreen
               variant="gameover"
               score={score}

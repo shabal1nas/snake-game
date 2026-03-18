@@ -12,9 +12,9 @@
   gap: 20px;
   padding-top: 50px;
 }
+
 .game-screen__title,
-.game-screen__final
-{
+.game-screen__final {
   color: var(--stat-text);
 }
 

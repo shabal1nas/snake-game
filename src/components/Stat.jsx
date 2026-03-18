@@ -1,12 +1,7 @@
 import '../styles/components/stat.css'
 
 const Stat = (props) => {
-
-  const {
-    label,
-    value,
-    suffix
-  } = props
+  const { label, value, suffix } = props
 
   return (
     <div className="stat">

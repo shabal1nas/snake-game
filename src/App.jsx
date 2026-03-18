@@ -1,9 +1,7 @@
-import GameSnake from "./GameSnake";
+import GameSnake from './GameSnake'
 
 const App = () => {
-  return (
-    <GameSnake />
-  )
+  return <GameSnake />
 }
 
 export default App
