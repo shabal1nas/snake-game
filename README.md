@@ -1,6 +1,6 @@
 # Snake Game 🐍
 
-A classic Snake game built with **React**, **Canvas API**, and **Vite**.
+Built to practice **state management, game logic, and Canvas API rendering**.
 
 This project demonstrates working with **React state management, Canvas rendering, and basic game logic architecture**.
 
@@ -10,8 +10,10 @@ This project demonstrates working with **React state management, Canvas renderin
 
 - keyboard controls (arrow keys)
 - dynamic speed increase
-- score and best score tracking
+- score and best score tracking (localStorage)
 - snake self-collision detection
+- game loop based on setInterval
+- canvas-based rendering
 - animated game frame
 - responsive canvas rendering
 
@@ -37,10 +39,10 @@ This project demonstrates working with **React state management, Canvas renderin
 
 ## Tech Stack
 
-- React
+- React (useReducer, hooks)
 - Canvas API
 - Vite
-- CSS Animations
+- CSS (animations, gradients)
 
 ---
 
@@ -88,19 +90,19 @@ Created as a learning project while studying **React and game logic architecture
 
 ## 🇷🇺 О проекте (на русском)
 
-Классическая игра "Змейка", реализованная с использованием **React**, **Canvas API** и **Vite**.
+Классическая игра «Змейка», реализованная с использованием **React**, **Canvas API** и **Vite**.
 
 В проекте реализованы:
 
 - управление с клавиатуры
-- увеличение скорости по мере роста счета
-- система очков и лучший результат (сохранение в localStorage)
-- проверка столкновения змейки с собой и стенами
-- отрисовка через Canvas
+- динамическое увеличение скорости
+- система очков и сохранение лучшего результата (localStorage)
+- проверка столкновений (стены и тело змейки)
+- отрисовка через Canvas API
 - анимация рамки игрового поля
 
-Проект создан в учебных целях с упором на:
+Проект выполнен с упором на:
 
-- понимание архитектуры состояния (useReducer)
-- работу с Canvas API
+- управление состоянием (useReducer)
 - построение игровой логики
+- работу с Canvas API
